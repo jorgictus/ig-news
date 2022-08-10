@@ -78,7 +78,9 @@ export default NextAuth({
         )
 
         return true
-      } catch {
+      } catch (error) {
+        console.log(error) // Adicionar o log do erro
+
         return false
       }
     },
